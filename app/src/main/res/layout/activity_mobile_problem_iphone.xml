@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    android:padding="10dp"
+    android:focusableInTouchMode="true"
+    tools:context=".Mobile_problem_iphone">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What seems to be the issue?"
+        android:background="@color/colorHeadingBg"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv1"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ischecked"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb1"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb2"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb3"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb4"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb5"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb6"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb7"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb8"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb9"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb10"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <CheckBox
+                android:id="@+id/cb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb11"
+                android:layout_marginTop="10dp"
+                android:onClick="ischecked"
+                android:textColor="#000"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/et_issue_iphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/cb11"
+                android:layout_marginLeft="30dp"
+                android:hint="Tell Us Your Problem"
+                android:textColor="#000"
+                android:inputType="text"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:textColorHint="#000"
+                android:textSize="19dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_iphone_issue"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btn_nxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_bg"
+        android:onClick="submit"
+        android:text="Next"
+        android:textSize="23dp" />
+
+</RelativeLayout>

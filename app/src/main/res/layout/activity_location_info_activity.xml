@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background_bg"
+    android:padding="10dp"
+    tools:context=".Location_info_activity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/float4"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@color/colorHeadingBg"
+        android:text="Location Details"
+        android:textColor="#000"
+        android:textSize="28dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv1"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/float5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#b6b2b0"
+                       >
+
+                <EditText
+                    android:id="@+id/et_buildingname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Flat No., Building Name"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/float6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/float5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Locatity, Area or Street"
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/float7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/float6"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/float6"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/float7"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_land"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_room"
+                    android:ems="10"
+                    android:hint="Landmark(OPTIONAL)"
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_bg"
+        android:onClick="submit_data"
+        android:text="Confirm"
+        android:textSize="23dp" />
+</RelativeLayout>

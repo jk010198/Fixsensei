@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "313234071733",
+    "firebase_url": "https://fixsenseiin-9636c.firebaseio.com",
+    "project_id": "fixsenseiin-9636c",
+    "storage_bucket": "fixsenseiin-9636c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313234071733:android:f384a55ca5afa85f",
+        "android_client_info": {
+          "package_name": "packag.jk.com.mobileshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313234071733-92a8q80ujoc90b41mrl7c55ob98fisia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "packag.jk.com.mobileshop",
+            "certificate_hash": "29fdcdeef55ecd7d274c649977222fa9115583ff"
+          }
+        },
+        {
+          "client_id": "313234071733-gct7egpr8ci6t8ci6emb6p3bgd20r073.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_utkIwH0mAx2SqoHfuevPhGRkAEzLKc8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313234071733-gct7egpr8ci6t8ci6emb6p3bgd20r073.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

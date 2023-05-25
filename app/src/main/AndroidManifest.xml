@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="packag.jk.com.mobileshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Second_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Samsung_model_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".All_mobile_problem_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".User_info_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Iphone_model_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Date_time_Book1_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Location_info_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ipad_model_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Date_time_book_samsung_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Info_preview_samsung"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Info_preview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".model_color"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Model_Color_Ipad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mobile_problem_iphone"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Splashscreen"
+            android:theme="@style/AppTheme.NoActionBarforsplash"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".WelcomeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

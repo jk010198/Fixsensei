@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    android:padding="10dp"
+    tools:context=".Second_activity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_phone_android"
+        android:gravity="center"
+        android:text="Select Your Device"
+        android:background="@color/colorHeadingBg"
+        android:textColor="#000"
+
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_iphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:onClick="iphone"
+                android:text="iPhone"
+                android:textAllCaps="false"
+                android:textSize="27dp" />
+
+            <Button
+                android:id="@+id/btn_ipad"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_iphone"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:onClick="ipad"
+                android:text="iPad"
+                android:textAllCaps="false"
+                android:textSize="27dp" />
+
+            <Button
+                android:id="@+id/btn_samsung"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_ipad"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:onClick="samsung"
+                android:text="Android"
+                android:textAllCaps="false"
+                android:textSize="27dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_samsung"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

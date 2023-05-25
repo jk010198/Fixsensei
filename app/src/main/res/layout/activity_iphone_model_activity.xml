@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    android:padding="10dp"
+    tools:context=".Iphone_model_activity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorHeadingBg"
+        android:text="Which Model?"
+        android:textSize="30dp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_iphone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv1"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginTop="20dp">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_bg"
+        android:text="Next"
+        android:onClick="nxt_activity"
+        android:textSize="23dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    android:id="@+id/rl"
+    android:padding="10dp"
+    android:focusableInTouchMode="true"
+    tools:context=".Samsung_model_activity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/colorHeadingBg"
+        android:text="What seems to be the issue?"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv1"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/float1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_samsung_model_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_phone_android"
+                    android:ems="10"
+                    android:hint="type your model"
+
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/float1"
+                android:layout_marginTop="10dp"
+                android:text="(eg.Samsung galaxy E7, Lenovo K8 note)"
+                android:textColor="#000" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/float2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/float1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_samsung_model_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_create"
+                    android:ems="10"
+                    android:hint="what color is it?"
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/float2"
+                android:layout_marginTop="10dp"
+                android:text="(Eg. White, Black, Silver)"
+                android:textColor="#000" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/float3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/float2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textColorHint="#b6b2b0">
+
+                <EditText
+                    android:id="@+id/et_samsung_issue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_error"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:hint="what seems to be the issue?"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/samsung_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_bg"
+        android:onClick="next_mobile_problem"
+        android:text="Next"
+        android:textSize="23dp" />
+
+
+</RelativeLayout>
